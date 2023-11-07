@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="public/answer.css">
+    <title></title>
+  </head>
+  <body>
+    <ul>
+   <% for(i=0; i < data.length; i++){%>
+    <% if(i%2 != 0){%>
+      <% if(data[i-1] == 'title'){%>
+      <li><h1><%=data[i]%></h1></li>
+      <% } else if(data[i-1] == 'header'){%>
+      <li><h2><u><%=data[i]%></u></h2></li>
+      <% } else if(data[i-1] == 'secondary'){%>
+      <li><h3 style='text-indent: 40px '><span>&#8226;</span><%=data[i]%></h3></li>
+      <% } else if(data[i-1] == 'paragraph'){%>
+      <li><p style='text-indent: 80px'><%=data[i]%></p></li>
+      <%}%>
+    <%}%>
+  <%}%>
+  </ul>
+  </body>
+</html>

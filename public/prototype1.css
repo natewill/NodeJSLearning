@@ -1,0 +1,24 @@
+textarea {
+  width: 70%;
+  height: 30px;
+  display: inline-block;
+}
+
+.btn-group {
+  display: inline-block;
+  width: 10%
+}
+
+
+label {
+    cursor: pointer;
+    display: inline-block;
+}
+
+input[type='radio'] {
+  display: inline-block;
+}
+
+input[name='number'] {
+  visibility: hidden;
+}
